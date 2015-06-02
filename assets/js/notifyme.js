@@ -11,7 +11,6 @@
             if(typeof $content == 'object'){
                 var itemsList ="";
                 for(var key in $content){
-                    console.log($content[key]);
                     if(typeof $content[key] == 'object'){
                         itemsList += singleItemTemplate($content[key][0]);
                     }else{
@@ -22,7 +21,7 @@
             }
             return $content;
         }
-        // Function to prepare Single item HTML 
+        // Function to prepare Single item HTML
         function singleItemTemplate(text){
             return '<li class="notify-single-item">'+ text+'</li>';
         }
